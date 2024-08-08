@@ -1,4 +1,3 @@
-```markdown
 # Authentication System with JWT using Node.js, React, and MongoDB
 
 This project is a full-stack application that demonstrates user authentication using JSON Web Tokens (JWT) with a frontend built using React and a backend built using Node.js, Express, and MongoDB.
@@ -73,7 +72,7 @@ You can set up these variables in a `.env` file:
 ```plaintext
 Access_Token_Secret=your_access_token_secret
 Refresh_Token_Secret=your_refresh_token_secret
-```
+
 
 ## Getting Started
 
