@@ -69,7 +69,7 @@ To run this project, you need to set up the following environment variables:
 
 You can set up these variables in a `.env` file:
 
-```plaintext
+
 Access_Token_Secret=your_access_token_secret
 Refresh_Token_Secret=your_refresh_token_secret
 
@@ -85,9 +85,9 @@ Refresh_Token_Secret=your_refresh_token_secret
 
 1. Install dependencies for both the frontend and backend:
 
-   ```bash
+   bash
    npm install
-   ```
+   
 
 2. Set up your environment variables in the `.env` file.
 
