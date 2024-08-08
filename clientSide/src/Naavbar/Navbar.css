@@ -1,0 +1,47 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #b6cdbd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 1px;
+}
+
+.logout-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5c715e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #0056b3;
+}
