@@ -4,10 +4,11 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const Login = ({ setAccessToken }) => {
+const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  axios.defaults.withCredentials = true;
 
   const Submit = (event) => {
     event.preventDefault();
@@ -15,7 +16,6 @@ const Login = ({ setAccessToken }) => {
       .post("http://localhost:3001/users/login", { username, password })
       .then((result) => {
         if (result.data.status === 200) {
-          setAccessToken(result.data.accessToken);
           navigate("/Home");
         } else if (result.data.status === 400){
           alert("Please enter correct username")
